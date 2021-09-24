@@ -7,8 +7,8 @@
 
 * Encoder 앞단은 pre-trained by imagenet weights 사용
 
-* Target domain attention map 설계 (![수식](https://latex.codecogs.com/gif.image?%5Cdpi%7B110%7D%20%5Cbg_black%20%5Cinline%20I=%5Cfrac%7Bx-%5Ctheta%20%7D%7BMAX(%5Csigma%20%5Cfrac%7B1.0%7D%7B%5Csqrt%7BN%7D%7D)), 
-![수식](https://latex.codecogs.com/gif.image?%5Cdpi%7B110%7D%20%5Cbg_black%20%5Cinline%20I=%5Cfrac%7B1%7D%7BN%7D%5Csum_%7B%7D%5E%7B%7D(%5Cfrac%7B1%7D%7BMAX(I)%7D&plus;MEAN(I)&plus;0.2)))
+* Target domain attention map 설계 (  ![수식](https://latex.codecogs.com/gif.image?%5Cdpi%7B110%7D%20%5Cbg_black%20%5Cinline%20I=%5Cfrac%7Bx-%5Ctheta%20%7D%7BMAX(%5Csigma%20%5Cfrac%7B1.0%7D%7B%5Csqrt%7BN%7D%7D)), 
+![수식](https://latex.codecogs.com/gif.image?%5Cdpi%7B110%7D%20%5Cbg_black%20%5Cinline%20I=%5Cfrac%7B1%7D%7BN%7D%5Csum_%7B%7D%5E%7B%7D(%5Cfrac%7B1%7D%7BMAX(I)%7D&plus;MEAN(I)&plus;0.2))  )
 
 
 
