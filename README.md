@@ -30,4 +30,5 @@
 * Adative training dataset 적용
 
 * GAN 특성 중 생성된 이미지들의 패턴과 원본 이미지들의 패턴이 다르다는것이 실험적으로 입증됨 [1]. 그래서 위 처럼 원본 이미지들의 attention map 과 모든 생성된 이미지에 대한 attention map이 각각 고유한 패턴이라고 가정하고, loss 설계. ( [1] GANprintR: Improved Fakes and Evaluation of the State of the Art in Face Manipulation Detection )
-  * ㄴㄴ
+  * 이 loss는 200 iterations 마다 학습되도록 설계하였음 (이유: 매 학습마다 생성된 모든 이미지들의 attention map을 구하는것은 학습에 소모되는시간이 많아지고, 생성되는 이미지의 blur가 심해질것으로 예상되기 때문)
+
