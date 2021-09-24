@@ -4,6 +4,11 @@
 * DIscriminator - Local attention map 을 활용
 
 * Class imbalance 문제 해결
-$$ MAX({\text{해당 클래스 수}\over\text{전체 클래스 수}})-{\text{해당 클래스 수}\over\text{전체 클래스 수}} - 1 $$
+$$
+					
+				
+				
+				x MAX({\text{해당 클래스 수}\over\text{전체 클래스 수}})-{\text{해당 클래스 수}\over\text{전체 클래스 수}} - 1
+				$$
 
 ## V24는 ablation study 로 예상 (이전 버전들도 포함할 것)
