@@ -7,7 +7,7 @@
 <br/>
 
 
-$ MAX({\text{해당 클래스 수}\over\text{전체 클래스 수}})-{\text{해당 클래스 수}\over\text{전체 클래스 수}} - 1 $
+MAX(\frac{Class_n}{Class_t})-\frac{Class_n}{Class_t}+1
 
 				
 
