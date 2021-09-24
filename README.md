@@ -7,7 +7,7 @@
 <br/>
 
 
-(\frac{Class<sub>n}{Class<sub>t}) - (\frac{Class<sub>n}{Class<sub>t})+1
+(\frac{Class<sub>n;}{Class<sub>t;}) - (\frac{Class<sub>n;}{Class<sub>t;})+1
 
 h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
 
