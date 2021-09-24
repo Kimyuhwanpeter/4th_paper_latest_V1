@@ -9,6 +9,8 @@
 
 \frac{Class_n}{Class_t} - \frac{Class_n}{Class_t}+1
 
+h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
+
 
 				
 
