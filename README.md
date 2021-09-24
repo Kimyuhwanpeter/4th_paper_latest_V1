@@ -11,7 +11,7 @@
 
 h<sub>&theta;</sub>(x) = &theta;<sub>0</sub> x + &theta;<sub>1</sub>x
 
-
+\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
 				
 
 ## V24는 ablation study 로 예상 (이전 버전들도 포함할 것)
