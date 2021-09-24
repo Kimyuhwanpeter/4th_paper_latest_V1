@@ -39,6 +39,11 @@
 
 ![그림](https://github.com/Kimyuhwanpeter/4th_paper_latest_V1/blob/main/f2.png)
 
+## V24 training samples
+
+![그림](https://github.com/Kimyuhwanpeter/4th_paper_latest_V1/blob/main/f3.png)
+<br/>
+
 ## 실험 예정
 
 * **(Morph train set)  WM ↔ BM style transform 실험 중**
