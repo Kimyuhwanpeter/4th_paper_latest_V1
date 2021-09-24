@@ -39,3 +39,19 @@
 
 ![그림](https://github.com/Kimyuhwanpeter/4th_paper_latest_V1/blob/main/f2.png)
 
+## 실험 예정
+
+* **(Morph train set)  WM ↔ BM style transform 실험 중**
+
+* **(Morph train set) WF ↔ BM style transform 실험 중**
+
+* (Morph train set) BF ↔ BM style transform 실험 예정
+
+* (Morph test set) WM ↔ BM style transform 실험예정
+
+* (Morph test set) WF ↔ BM style transform 실험예정
+
+* (Morph test set) BF ↔ BM style transform 실험예정
+
+* 1번에서 7번 실험이 끝난 후 인종 및 성별 인식 및 나이 추정 실험 예정
+
