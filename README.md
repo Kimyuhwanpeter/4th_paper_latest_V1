@@ -7,7 +7,7 @@
 <br/>
 
 
-MAX(\frac{Class_n}{Class_t})-\frac{Class_n}{Class_t}+1
+* MAX(\frac{Class_n}{Class_t})-\frac{Class_n}{Class_t}+1
 
 				
 
