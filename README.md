@@ -5,5 +5,10 @@
 
 * Class imbalance 문제 해결 ( ![수식](https://latex.codecogs.com/gif.image?%5Cdpi%7B110%7D%20%5Cbg_black%20%5Cinline%20MAX(%5Cfrac%7BClass_n%7D%7BClass_t%7D)%20-%20(%5Cfrac%7BClass_n%7D%7BClass_t%7D)&plus;1%5Cfrac%7B%7D%7B) )
 
+* Encoder 앞단은 pre-trained by imagenet weights 사용
+
+* Target domain attention map 설계
+![수식](https://latex.codecogs.com/gif.image?%5Cdpi%7B110%7D%20%5Cbg_black%20%5Cinline%20I=%5Cfrac%7Bx-%5Ctheta%20%7D%7BMAX(%5Csigma%20%5Cfrac%7B1.0%7D%7B%5Csqrt%7BN%7D%7D))
+![수식]()
 
 ## V24는 ablation study 로 예상 (이전 버전들도 포함할 것)
