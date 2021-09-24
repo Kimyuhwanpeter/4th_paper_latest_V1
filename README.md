@@ -4,6 +4,8 @@
 * DIscriminator - Local attention map 을 활용
 
 * Class imbalance 문제 해결
+<br/>
+
 @equation(id)
 MAX({\text{해당 클래스 수}\over\text{전체 클래스 수}})-{\text{해당 클래스 수}\over\text{전체 클래스 수}} - 1
 @/
