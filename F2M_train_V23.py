@@ -257,7 +257,7 @@ def match_age_images(a_images, a_labels, b_images, b_labels):
     for i in range(len(a_images)):
         i = 0
         for j in range(len(b_images)):
-            if np.less_equal(tf.abs(a_labels[i] - b_labels[j]), 3):
+            if np.less_equal(tf.abs(a_labels[i] - b_labels[j]), 2):
                 A_images_buffer.append(a_images[i])
                 A_labels_buffer.append(a_labels[i])
                 a_images = np.delete(a_images, i)
@@ -341,9 +341,6 @@ def main():
             B_ref = tf.reduce_mean(B_ref_img, -1, keepdims=True)
             B_ref = 1 / (1 + tf.exp(-4.6*B_ref))
 
-
-            
-
             min_ = min(len(A_images), len(B_images))
             A = list(zip(A_images, A_labels))
             B = list(zip(B_images, B_labels))
@@ -351,10 +348,6 @@ def main():
             shuffle(A)
             b_images, b_labels = zip(*B)
             a_images, a_labels = zip(*A)
-            a_images = a_images[:min_]
-            a_labels = a_labels[:min_]
-            b_images = b_images[:min_]
-            b_labels = b_labels[:min_]
 
             a_images, a_labels, b_images, b_labels = match_age_images(a_images, a_labels, b_images, b_labels)
 
