@@ -231,7 +231,7 @@ def cal_loss(A2B_model, B2A_model, DA_model, DB_model,
         Adver_loss = B_class_weights*(tf.reduce_mean((DB_real - tf.ones_like(DB_real))**2) + tf.reduce_mean((DB_fake - tf.zeros_like(DB_fake))**2)) / 2. \
             + A_class_weights*(tf.reduce_mean((DA_real - tf.ones_like(DA_real))**2) + tf.reduce_mean((DA_fake - tf.zeros_like(DA_fake))**2)) / 2.
 
-        if count % 200 == 0:
+        if count % 10 == 0 and count != 0:
             distribution_loss = 10*tf.reduce_mean(tf.abs(fake_A_ref_img - A_ref)) + 10*tf.reduce_mean(tf.abs(fake_B_ref_img - B_ref))
             g_loss = Cycle_loss + G_gan_loss + id_loss + age_loss + distribution_loss
         else:
@@ -269,7 +269,7 @@ def match_age_images(a_images, a_labels, b_images, b_labels):
     for i in range(len(a_images)):
         i = 0
         for j in range(len(b_images)):
-            if np.less_equal(tf.abs(a_labels[i] - b_labels[j]), 3):
+            if np.less_equal(tf.abs(a_labels[i] - b_labels[j]), 2):
                 A_images_buffer.append(a_images[i])
                 A_labels_buffer.append(a_labels[i])
                 a_images = np.delete(a_images, i)
@@ -360,10 +360,6 @@ def main():
             shuffle(A)
             b_images, b_labels = zip(*B)
             a_images, a_labels = zip(*A)
-            a_images = a_images[:min_]
-            a_labels = a_labels[:min_]
-            b_images = b_images[:min_]
-            b_labels = b_labels[:min_]
 
             a_images, a_labels, b_images, b_labels = match_age_images(a_images, a_labels, b_images, b_labels)
 
@@ -382,7 +378,7 @@ def main():
 
             for step in range(train_idx):
                 ####################################################################################
-                if count % 200 == 0:
+                if count % 10 == 0 and count != 0:
                     A_ref_img = 0.
                     B_ref_img = 0.
                     train_it = iter(gener)
